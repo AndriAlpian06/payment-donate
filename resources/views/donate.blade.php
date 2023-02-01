@@ -1,388 +1,89 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Donation Form</title>
+    <title>PEREMPUAN AMAN | DONASI</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <style>
-      /* html, body {
-      min-height: 100%;
-      }
-      body, div, form, input, select, textarea, label { 
-      padding: 0;
-      margin: 0;
-      outline: none;
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 14px;
-      color: #666;
-      line-height: 22px;
-      }
-      h1 {
-      position: absolute;
-      margin:0;
-      font-size: 60px;
-      color: #fff;
-      z-index: 2;
-      line-height: 83px;
-      top:30px;
-      }
-      legend {
-      padding: 10px;      
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 18px;
-      color: #fff;
-      background-color: #1c87c9;
-      }
-      textarea {
-      width: calc(100% - 12px);
-      padding: 5px;
-      }
-      .testbox {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: inherit;
-      padding: 20px;
-      }
-      form {
-      width: 100%;
-      padding: 20px;
-      border-radius: 6px;
-      background: #fff;
-      box-shadow: 0 0 8px #006622; 
-      }
-      .banner {
-      position: relative;
-      height: 250px;
-      background-image: url("/uploads/media/default/0001/02/cc6bc584f236c7234947015b89151ab6d04c4cbf.jpeg");  
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      }
-      .banner::after {
-      content: "";
-      background-color: rgba(0, 0, 0, 0.4); 
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      }
-      input, select, textarea {
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      }
-      input {
-      width: calc(100% - 10px);
-      padding: 5px;
-      }
-      input[type="date"] {
-      padding: 4px 5px;
-      }
-      textarea {
-      width: calc(100% - 12px);
-      padding: 5px;
-      }
-      .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
-      color:  #006622;
-      }
-      .checkbox input[type=checkbox] {
-      display:inline-block;
-      height:15px;
-      width:15px;
-      margin-right:5px;
-      vertical-align:text-top;
-      }
-      .item input:hover, .item select:hover, .item textarea:hover {
-      border: 1px solid transparent;
-      box-shadow: 0 0 3px 0  #006622;
-      color: #006622;
-      }
-      .item {
-      position: relative;
-      margin: 10px 0;
-      }
-      .item span {
-      color: red;
-      }
-      .week {
-      display:flex;
-      justfiy-content:space-between;
-      }
-      .colums {
-      display:flex;
-      justify-content:space-between;
-      flex-direction:row;
-      flex-wrap:wrap;
-      }
-      .colums div {
-      width:48%;
-      }
-      input[type=radio], input[type=checkbox]  {
-      display: none;
-      }
-      label.radio {
-      position: relative;
-      display: inline-block;
-      margin: 5px 20px 15px 0;
-      cursor: pointer;
-      }
-      .question span {
-      margin-left: 30px;
-      }
-      .question-answer label {
-      display: block;
-      }
-      label.radio:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 17px;
-      height: 17px;
-      border-radius: 50%;
-      border: 2px solid #ccc;
-      }
-      input[type=radio]:checked + label:before, label.radio:hover:before {
-      border: 2px solid  #006622;
-      }
-      label.radio:after {
-      content: "";
-      position: absolute;
-      top: 6px;
-      left: 5px;
-      width: 8px;
-      height: 4px;
-      border: 3px solid  #006622;
-      border-top: none;
-      border-right: none;
-      transform: rotate(-45deg);
-      opacity: 0;
-      }
-      input[type=radio]:checked + label:after {
-      opacity: 1;
-      }
-      .flax {
-      display:flex;
-      justify-content:space-around;
-      }
-      .btn-block {
-      margin-top: 10px;
-      text-align: center;
-      }
-      button {
-      width: 150px;
-      padding: 10px;
-      border: none;
-      border-radius: 5px; 
-      background:  #1c87c9;
-      font-size: 16px;
-      color: #fff;
-      cursor: pointer;
-      }
-      button:hover {
-      background:  #0692e8;
-      }
-      @media (min-width: 568px) {
-      .name-item, .city-item {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      }
-      .name-item input, .name-item div {
-      width: calc(50% - 20px);
-      }
-      .name-item div input {
-      width:97%;}
-      .name-item div label {
-      display:block;
-      padding-bottom:5px;
-      }
-      } */
-      body {
-        font-family: Arial;
-        font-size: 17px;
-        padding: 8px;
-        }
-
-        * {
-        box-sizing: border-box;
-        }
-
-        .row {
-        display: -ms-flexbox; /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
-        flex-wrap: wrap;
-        margin: 0 -16px;
-        }
-
-        .col-25 {
-        -ms-flex: 25%; /* IE10 */
-        flex: 25%;
-        }
-
-        .col-50 {
-        -ms-flex: 50%; /* IE10 */
-        flex: 50%;
-        }
-
-        .col-75 {
-        -ms-flex: 75%; /* IE10 */
-        flex: 75%;
-        }
-
-        .col-25,
-        .col-50,
-        .col-75 {
-        padding: 0 16px;
-        }
-
-        .container {
-        background-color: #f2f2f2;
-        padding: 5px 20px 15px 20px;
-        border: 1px solid lightgrey;
-        border-radius: 3px;
-        }
-
-        input[type=text] {
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        }
-
-        input[type=number] {
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        }
-
-        label {
-        margin-bottom: 10px;
-        display: block;
-        }
-
-        .icon-container {
-        margin-bottom: 20px;
-        padding: 7px 0;
-        font-size: 24px;
-        }
-
-        .btn {
-        background-color: #8756c2;
-        color: white;
-        padding: 12px;
-        margin: 10px 0;
-        border: none;
-        width: 100%;
-        border-radius: 3px;
-        cursor: pointer;
-        font-size: 17px;
-        }
-
-        .btn:hover {
-        background-color: #8756c2;
-        }
-
-        a {
-        color: #2196F3;
-        }
-
-        hr {
-        border: 1px solid lightgrey;
-        }
-
-        span.price {
-        float: right;
-        color: grey;
-        }
-
-        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-        @media (max-width: 800px) {
-        .row {
-            flex-direction: column-reverse;
-        }
-        .col-25 {
-            margin-bottom: 20px;
-        }
-    }
-    </style>
-  </head>
+    <style>@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite('resources/css/app.css')
+</head>
   <body>
-    <!-- <div class="testbox">
-        <form action="payment" method="GET">
-            <div class="banner">
-                <h1>Donation Form</h1>
-            </div>
-            <br/>
-            <fieldset>
-                <legend>Donation Form</legend>
-                <div class="item">
-                    <label for="fname">First Name<span>*</span></label>
-                    <input id="fname" type="text" name="fname" />
-                </div>
-                <div class="item">
-                    <label for="lname"> Last Name<span>*</span></label>
-                    <input id="lname" type="text" name="lname" />
-                </div>
-                <div class="item">
-                    <label for="address">Email Address<span>*</span></label>
-                    <input id="address" type="text"   name="email" />
-                </div>
-                <div class="item">
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" type="tel"   name="phone"/>
-                </div>
-                <div class="item">
-                    <label for="amount">Donation Amount<span>*</span></label>
-                    <input id="amount" type="number"   name="amount" />
-                </div>
-                <div class="item">
-                    <label for="donation">Donation Amount</label>
-                    <textarea id="donation" rows="3" name="commnent"></textarea>
-                </div>
-            </fieldset>
-            <div class="btn-block">
-                <button>Lanjut</button>
-            </div>
-        </form>
-    </div> -->
-    <div class="row">
-        <div class="col-75">
-            <div class="container">
-            <form action="payment" method="GET">
-                <div class="row">
-                    <div class="col-50">
-                        <h3>Payment</h3>
-                        <div class="row">
-                            <div class="col-50">
-                                <label for="fname">First Name</label>
-                                <input type="text" id="fname" name="fname" placeholder="" required>
-                            </div>
-                            <div class="col-50">
-                                <label for="lname">Last Name</label>
-                                <input type="text" id="lname" name="lname" placeholder="" required>
+    <div>
+        <section class="mb-0">
+            <div class="px-6 py-2 md:px-4 bg-gray-50 text-gray-800 min-h-screen text-center lg:text-left">
+                <div class="container mx-auto xl:px-32">
+                    <div class="mt-4">
+                        <p class="text-3xl font-bold">A donation from you today could help climate leaders like Rowena fight climate change in their communities.</p>
+                    </div>                   
+                    <div class="grid lg:grid-cols-2 gap-4 items-center">
+                        <div class="lg:mb-0">
+                            <img
+                            src="https://perempuanaman.or.id/bacend/wp-content/uploads/elementor/thumbs/PAMAN_DSD_5D4_200825_RUL_0041-scaled-q1fswpn45ks3w02h43nb0rkq6wmwmdwwf6pvgqm1rk.jpg"
+                            class="w-full rounded-lg shadow-lg"
+                            alt=""
+                            />
+                        </div>
+                        <div class="lg:mt-0">
+                            <div class="min-w-screen min-h-screen bg-gray-50 flex items-center justify-center px-2">
+                                <div class="w-full mx-auto rounded-lg bg-white shadow-lg p-5 text-gray-700" style="max-width: 600px">
+                                    <div class="w-full pt-1 pb-3">
+                                        <div class="bg-indigo-500 text-white overflow-hidden rounded-full w-12 h-12 -mt-16 mx-auto shadow-lg flex justify-center items-center">
+                                            <i class="mdi mdi-credit-card-outline text-3xl"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <h1 class="text-center font-bold text-xl uppercase">donate payment info</h1>
+                                    </div>
+                                    <form action="payment">
+                                        <div class="mb-2">
+                                            <label class="font-bold text-sm mb-2 ml-1">Fisrt Name</label>
+                                            <div>
+                                                <input class="w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors" type="text" name="fname" required/>
+                                            </div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="font-bold text-sm mb-2 ml-1">Last Name</label>
+                                            <div>
+                                                <input class="w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors" type="text" name="lname" required/>
+                                            </div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="font-bold text-sm mb-2 ml-1">Email</label>
+                                            <div>
+                                                <input class="w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors" type="text" name="email" required/>
+                                            </div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="font-bold text-sm mb-2 ml-1">Phone</label>
+                                            <div>
+                                                <input class="w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors" placeholder="xxxx xxxx xxxx xxxx" type="number" name="phone"/>
+                                            </div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="font-bold text-sm mb-2 ml-1">Amount</label>
+                                            <div>
+                                                <input class="w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors" type="number" name="amount"/>
+                                            </div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="font-bold text-sm mb-2 ml-1">Comment Donation</label>
+                                            <div>
+                                                <input class="w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors" type="text" name="comment" required/>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"><i class="mdi mdi-lock-outline mr-1"></i>Lanjut</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="" required>
-                        <label for="phone">Phone Number</label>
-                        <input type="number" id="phone" name="phone" placeholder="08xx-xxxx-xxxx" required>
-                        <label for="amount">Donation Amount</label>
-                        <input type="number" id="amount" name="amount" placeholder="" required>
-                        <label for="ccnum">Donation Comment</label>
-                        <input type="text" id="donation" name="commnent" placeholder="" required>
                     </div>
                 </div>
-                </label>
-                <input type="submit" value="Continue to checkout" class="btn">
-            </form>
             </div>
-        </div>
+        </section>
     </div>
   </body>
 </html>

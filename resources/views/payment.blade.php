@@ -1,100 +1,51 @@
 
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PEREMPUAN AMAN | PAYMENT</title>
     <!-- @TODO: replace SET_YOUR_CLIENT_KEY_HERE with your client key -->
     <script type="text/javascript"
       src="https://app.sandbox.midtrans.com/snap/snap.js"
       data-client-key="SB-Mid-client-9g198xiJk84Fzxjn"></script>
     <!-- Note: replace with src="https://app.midtrans.com/snap/snap.js" for Production environment -->
-    <style>
-
-      body {
-        font-family: Arial;
-        font-size: 17px;
-        padding: 8px;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      .row {
-        display: -ms-flexbox; /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
-        flex-wrap: wrap;
-        margin: 0 -16px;
-      }
-
-      .col-25 {
-        -ms-flex: 25%; /* IE10 */
-        flex: 25%;
-      }
-
-      .col-25 {
-        padding: 0 16px;
-      }
-
-      span.price {
-        float: right;
-        color: grey;
-      }
-
-      .container {
-        background-color: #f2f2f2;
-        padding: 5px 20px 15px 20px;
-        border: 1px solid lightgrey;
-        border-radius: 3px;
-      }
-
-      .button-pay {
-        position: absolute;
-        top:10%;
-        background-color:#8756c2;
-        color: #fff;
-        border:none; 
-        border-radius:10px; 
-        padding:15px;
-        min-height:30px; 
-        min-width: 120px;
-      }
-
-      .btn {
-        background-color: #8756c2;
-        color: white;
-        padding: 12px;
-        margin: 10px 0;
-        border: none;
-        width: 100%;
-        border-radius: 3px;
-        cursor: pointer;
-        font-size: 17px;
-      }
-
-      .btn:hover {
-        background-color: #8756c2;
-      }
-
-      @media (max-width: 800px) {
-        .row {
-          flex-direction: column-reverse;
-        }
-        .col-25 {
-          margin-bottom: 20px;
-        }
-      }
-    </style>
+    <style>@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite('resources/css/app.css')
   </head>
- 
   <body>
-    <div class="col-25">
-      <div class="container">
-        <h4>Donasi <span class="price" style="color:black"></h4>
-        <hr>
-        <p>Total <span class="price" style="color:black"><b>{{ $amount }}</b></span></p>
-      </div>
-      <button id="pay-button" class="btn">Pay</button>
+    <div>
+      <section class="mb-0">
+          <div class="px-6 py-2 md:px-4 bg-gray-50 text-gray-800 min-h-screen text-center lg:text-left">
+              <div class="container mx-auto xl:px-32">                  
+                  <div class="grid lg:grid-cols-2 gap-4 items-center">
+                      <div class="lg:mb-0">
+                          <img
+                          src="https://perempuanaman.or.id/bacend/wp-content/uploads/elementor/thumbs/PAMAN_DSD_5D4_200825_RUL_0041-scaled-q1fswpn45ks3w02h43nb0rkq6wmwmdwwf6pvgqm1rk.jpg"
+                          class="w-full rounded-lg shadow-lg"
+                          alt=""
+                          />
+                      </div>
+                      <div class="lg:mt-0">
+                          <div class="min-w-screen min-h-screen bg-gray-50 flex items-center justify-center px-2">
+                              <div class="w-full mx-auto rounded-lg bg-white shadow-lg p-5 text-gray-700" style="max-width: 600px">
+                                  <div class="mb-2">
+                                      <h1 class="text-center font-bold text-xl uppercase">Jumlah Donasi</h1>
+                                  </div>
+                                    <div class="mb-2">
+                                        <div>
+                                            <input class="w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors" type="text" name="comment" readonly value={{ $amount }} />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold" id="pay-button"><i class="mdi mdi-lock-outline mr-1"></i> PAY NOW</button>
+                                    </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
     </div>
     <script type="text/javascript">
       // For example trigger on button clicked, or any time you need

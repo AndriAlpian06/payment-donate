@@ -30,6 +30,7 @@ class DonateController extends Controller
                 'last_name' => $request->get('lname'),
                 'email' => $request->get('email'),
                 'phone' => $request->get('phone'),
+                'comment' => $request->get('comment'),
             ),
         );
         
@@ -37,7 +38,7 @@ class DonateController extends Controller
 
         //return $snapToken;
         //dd($params);
-        
+
         return view('payment', [
             'snap_token' => $snapToken,
             'amount' => $request->amount
